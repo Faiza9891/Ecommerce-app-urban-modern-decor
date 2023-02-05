@@ -1,0 +1,90 @@
+.app__bg{
+    overflow-x: hidden;
+    background: radial-gradient(#f6f9fa,#110f0f);
+    height: 100vh;
+}
+.about_content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 5rem;
+    padding: 1rem;
+    color: #060b0c;
+}
+.about_content h4{
+    margin: 1rem;
+}
+.app__laurels_awards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+}
+.about_wall{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    /* position:relative; */
+    font-size: 20px;
+    left: 35vw;
+    bottom: 23vw;
+    width: 50%;
+    color: rgb(24, 23, 23);
+}
+.app__laurels_awards-card {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 230px;
+    margin: 1rem;
+}
+.about_img{
+    background-image:url('https://www.handscarpets.com/Content/Upload/CollectionCategory/empirex-banner-1.jpg');
+    width: 100%;
+    height: 600px;
+}
+/* .about_wall_img{
+    background-image: url('https://www.wallskin.in/static/www/images/productImages/494x544/The-Stone-Impression-1-1529773353165.jpg');
+    width: 30vw;
+    height: 600px;
+    margin: 2rem;
+} */
+
+
+.about_head{
+    color: rgb(245, 244, 239);
+    display: flex;
+    font-size: 30px;
+    justify-content:start;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1900px) {
+    .app__laurels_awards-card {
+        min-width: 390px;
+    }
+}
+
+.app__laurels_awards-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.app__laurels_awards-card_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .app__laurels_awards-card {
+        min-width: 100%;
+        margin: 1rem 0;
+    }
+}

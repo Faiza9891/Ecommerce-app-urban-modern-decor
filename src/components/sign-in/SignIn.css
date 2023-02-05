@@ -1,0 +1,184 @@
+.sign_in_bg{
+background: radial-gradient(#f6f9fa,#110f0f);
+overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signin_card{
+  height: 540px;
+  width: 28%;
+  justify-content: right;
+  background-color:rgb(148, 147, 147);
+  position:absolute;
+  padding: 1em;
+  left: 35%;
+  top: 18%;
+  transition: 300ms;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+.signin_card:hover{
+  /* transform: scale(0.8); */
+  margin-bottom: 2rem;
+  bottom: 30%;
+  background-color: rgb(124, 123, 123);
+  box-shadow: 5px 10px 5px 10px rgb(44, 43, 43);
+  border: 5px solid rgb(245, 242, 242);
+
+}
+.inputs{
+display: flex;
+justify-content: center;
+text-align: center;
+display: block;
+padding: 0rem;
+width: 70%;
+position: absolute;
+top: 10%;
+left: 15%;
+}
+
+.input {
+  color: white;
+  border: 2px solid rgb(15, 15, 15);
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: rgb(243, 238, 238);
+  /* max-width: 230px; */
+  width: 80%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 0.5rem;
+ }
+ 
+ .input:active {
+  box-shadow: 2px 2px 15px #0d0c0e inset;
+ }
+ .login_btn{
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: .5rem;
+  color: #111827;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  width: 30%;
+  font-weight: 600;
+  display: flex;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  margin-left: 6vw;
+}
+.login_btn:hover {
+  background-color:black;
+  color: #f6f9fa;
+}
+
+.login_btn:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+.login_btn:focus-visible {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.register{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+.register_btn{
+display: inline-block;
+margin: 1.5rem;
+font-size: 1.3rem;
+border-bottom: 2px solid black;
+color: black;
+}
+.register_btn:hover{
+  color: #312e2e;
+}
+@media  screen and (max-width:1750px) {
+  .signin_card{
+    width: 550px;
+    height: 500px;
+    margin: 1rem;
+  }
+  .inputs{
+    top: 8%;
+  }
+  .login_btn{
+    margin-left: 7rem;
+  }
+}
+@media  screen and (max-width:1250px) {
+  .signin_card{
+    width: 450px;
+    height: 500px;
+    left: 25%;
+  }
+  .inputs{
+    top: 5%;
+  }
+  .login_btn{
+    margin-left: 7rem;
+  }
+}
+@media  screen and (max-width:850px) {
+  .signin_card{
+    width: 500px;
+    height: 500px;
+    left: 10%;
+  }
+  .inputs{
+    top: 5%;
+  }
+  .login_btn{
+    margin-left: 7rem;
+  }
+}
+@media  screen and (max-width:650px) {
+  .signin_card{
+    width: 300px;
+    height: 500px;
+    left: 12%;
+  }
+  .inputs{
+    top: 0%;
+  }
+  .login_btn{
+    margin-left: 4rem;
+    margin-top: -3rem;
+  }
+  .register_btn{
+    margin: 1rem;
+  }
+}
+@media  screen and (max-width:450px) {
+  .signin_card{
+    width: 280px;
+    height: 500px;
+    left: 7%;
+  }
+  .inputs{
+    top: 0%;
+  }
+  .login_btn{
+    margin-left: 4rem;
+    margin-top: -3rem;
+  }
+  .register_btn{
+    margin: 1rem;
+  }
+}
