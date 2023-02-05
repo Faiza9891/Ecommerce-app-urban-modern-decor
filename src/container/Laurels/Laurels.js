@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import SubHeading from '../../components/SubHeading/SubHeading';
-import { images, data } from '../../constants';
+import Footer from '../Footer/Footer';
 import './Laurels.css';
 
 // const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
@@ -17,10 +16,13 @@ import './Laurels.css';
 
 
 const Laurels = () => (
+  <>
   <div className="app__bg app__wrapper section__padding" id="awards">
   <Navbar/>
-  <div className='about_bg'>
+  <div className='bg'>
 <div className='about_img'>
+<img src='https://www.carpetcellar.com/assets/admin/base/images/banner/29.jpg' alt='img_1'/>
+
 </div>
 <div className='about_content'>
 In the rich history of carpetmaking, the exquisite Persian rug serves not just as a crown jewel but also as a testament and keeper of millennia-old art and culture. Today, having journeyed since antiquity, it invites a reinterpretation – contemporary and endearing.
@@ -30,6 +32,8 @@ Rare and unique in design, each carpet in this collection is an unconventional t
 
 </div>
   </div>
+  <Footer/>
+  </>
 );
 
 export default Laurels;

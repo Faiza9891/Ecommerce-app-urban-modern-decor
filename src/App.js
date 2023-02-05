@@ -9,7 +9,6 @@ import { Route,Routes } from 'react-router-dom';
 import Loader from './loader/Loader';
 import Laurels from './container/Laurels/Laurels';
 import SpecialMenu from './container/Menu/SpecialMenu';
-import Footer from './container/Footer/Footer';
 
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
   <Route path="/about" element={<Laurels/>}/>
   <Route path="/signin" element={<SignIn />}/>
   </Routes>
-  <Footer/>
   </>
   );
 }

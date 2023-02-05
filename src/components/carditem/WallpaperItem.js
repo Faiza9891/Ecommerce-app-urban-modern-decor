@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../../container/Footer/Footer';
 
 
 
@@ -14,10 +15,6 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const WallpaperItem = () => {
   const notifyme = () =>toast.warn("Please login!");
-  const clearWaitingQueue = () => {
-    // Easy, right 😎
-    toast.clearWaitingQueue();
-  }
 
   const wallData = [
     {
@@ -253,6 +250,7 @@ const wallpaperData = [
   // },[]);
 
   return (
+    <>
     <div className='carpet'>
     <ToastContainer
     autoClose={1000}
@@ -269,7 +267,7 @@ pauseOnHover
        <div>
    <Navbar/>
     <div className='card_item_card'>
-<img src='https://see.fontimg.com/api/renderfont4/OV9ee/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/V2FsbHBhcGVycw/lucy-said-ok-personal-use-italic.png' className="wallpaper_head"/>
+<img src='https://see.fontimg.com/api/renderfont4/OV9ee/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/V2FsbHBhcGVycw/lucy-said-ok-personal-use-italic.png' className="wallpaper_head" alt='img'/>
    <div className='carpet_sec'>
    <section className='slider_sec'>
 
@@ -279,7 +277,7 @@ pauseOnHover
 
        <div key={index} className={index === dataIndex ? "slide active" : "slide"}>
        <div className='sec'>
-       <img src={slide.img}/>
+       <img src={slide.img} alt="img"/>
 </div>
       
      </div>
@@ -298,7 +296,7 @@ pauseOnHover
     {wallpaperData.map((e,index) =>{
         return(
                   <div className='card_item'>
-                  <img src={e.imgUrl}/>
+                  <img src={e.imgUrl} alt="img"/>
                   <h1 style={{margin:"1rem",color:"white"}}> PRICE - ₹{e.price}</h1>
                   <div className='card_content'>
                   <h3 style={{margin:"1rem",color:"black"}}> {e.description}</h3>
@@ -321,6 +319,8 @@ pauseOnHover
     </div>
     </div>)
     </div>
+    <Footer/>
+    </>
   );
 }
   

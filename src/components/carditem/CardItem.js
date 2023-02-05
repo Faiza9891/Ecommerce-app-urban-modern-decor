@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import './CardItem.css'
 import Navbar from '../Navbar/Navbar';
 import  Slider  from 'react-slick';
@@ -6,15 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../../container/Footer/Footer';
 
 const CardItem = () => {
   const notify = () => toast.warn("Please login!");
-  const clearWaitingQueue = () => {
-    // Easy, right 😎
-    toast.clearWaitingQueue();
-  }
- 
-
  
 
 const slideData = [
@@ -113,7 +108,7 @@ settings.slidesToShow = 2
           rating:"4",
           price:"2099",
           offer:"FREE delivery February 8 - 9.",
-          stock:"Usually dispatched in 3 to 4 days."
+          stock:"Out of stock."
       
         },
         {
@@ -121,7 +116,7 @@ settings.slidesToShow = 2
           description:"Handwoven Plain shag Collection Super Soft Microfiber Silk Touch Rugs with 2 inch Pile Height. Size 5x8 feet Silver Ivory Multi",
           rating:"5",
           price:"7999",
-          offer:"FREE delivery February 6 - 7",
+          offer:"FREE delivery",
           stock:"In stock."
         },
         {
@@ -129,7 +124,7 @@ settings.slidesToShow = 2
           description:"Designer Superfine Cotton Bed Cover Carpet | Rug | Living Room | Bedroom | Hall | School | Temple | Bedside Runner (Red, 5x7)",
           rating:"3",
           price:"495",
-          offer:"FREE delievery Saturday,28 january",
+          offer:"FREE delievery.",
           stock:"In stock"
       
         },
@@ -138,7 +133,7 @@ settings.slidesToShow = 2
           description:"Status 5 x 7 Feet Multi Printed Vintage Persian Carpet Rug Runner for Bedroom/Living Area/Home with Anti Slip Backing",
           rating:"5",
           price:"1909",
-          offer:"FREE delievery Saturday,28 january",
+          offer:"FREE delievery.",
           stock:"In stock"
       
         },
@@ -147,7 +142,7 @@ settings.slidesToShow = 2
           description:"spinrific Cotton Chindi Braided Floor Rug Boho Bedside Living Room Carpet Rug, Multi-Coloured, Pack of 1",
           rating:"3",
           price:"299",
-          offer:"FREE delievery Saturday,28 january.",
+          offer:"FREE delievery.",
           stock:"In stock"
       
         },
@@ -203,7 +198,7 @@ settings.slidesToShow = 2
    theme='light'
    />
        <div className='carpet_sec'>
-       <img src='https://see.fontimg.com/api/renderfont4/OV9ee/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Y2FycGV0cw/lucy-said-ok-personal-use-italic.png' style={{height:"89px"}}/>
+       <img className='carpet_img' alt='img' src='https://see.fontimg.com/api/renderfont4/OV9ee/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Y2FycGV0cw/lucy-said-ok-personal-use-italic.png' style={{height:"10%"}}/>
        <section className='slider_sec'>
    
        <Slider {...settings}>
@@ -212,7 +207,7 @@ settings.slidesToShow = 2
    
            <div key={index} className={index === dataIndex ? "slide active" : "slide"}>
            <div className='sec'>
-           <img src={slide.imgUrl}/>
+           <img src={slide.imgUrl} alt="img"/>
    </div>
           
          </div>
@@ -240,7 +235,7 @@ settings.slidesToShow = 2
             return(
              
                       <div className='card_item'>
-      <img src={e.imgUrl}/>
+      <img src={e.imgUrl} alt="img"/>
       <h1 style={{margin:"1rem",color:"white",fontFamily:"cursive"}}> PRICE - ₹{e.price}</h1>
       <div className='card_content'>
       <h3 style={{margin:"1rem",color:"black"}}> {e.description}</h3>
@@ -261,6 +256,7 @@ settings.slidesToShow = 2
       
         })}  </div>
         </div>
+        <Footer/>
         </div>
       );
     }

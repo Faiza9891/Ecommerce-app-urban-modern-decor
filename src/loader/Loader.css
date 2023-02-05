@@ -149,3 +149,27 @@
  .loader-square:nth-of-type(7) {
   animation-delay: -10s;
  }
+ @media screen and (max-width:1350px){
+  .loader{
+    left: 48%;
+    top: 38%;
+  }
+ }
+ @media screen and (max-width:1050px){
+  .loader{
+    left: 45%;
+    top: 45%;
+  }
+ }
+ @media screen and (max-width:450px){
+  .loader{
+    left: 40%;
+    top: 45%;
+  }
+ }
+ @media screen and (max-width:350px){
+  .loader{
+    left: 35%;
+    top: 45%;
+  }
+ }

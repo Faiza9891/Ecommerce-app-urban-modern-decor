@@ -1,19 +1,20 @@
 .app__contact {
     background: radial-gradient(#fdf9f9,#727171);
+    overflow-x: hidden;
 }
 
-.contact_bg{
-    background-image: url("https://www.handscarpets.com/content/images/contact-banner.jpg");
+.contact_bg img{
     width: 100%;
     height: 600px;
 }
 .contact_content{
-    background: white;
+    background:none;
     height: 100%;
+    margin: 2rem;
     justify-content: center;
     text-align: center;
     font-family: cursive;
-    color: #727171;
+    color:black;
 }
 .contact_content h2{
     display: block;
@@ -64,5 +65,11 @@
     .app__specialMenu-menu_heading {
         font-size: 35px;
         line-height: 48.5px;
+    }
+}
+@media screen and (max-width:450){
+    .contact_details p{
+        margin: 1rem;
+        width: 100%;
     }
 }

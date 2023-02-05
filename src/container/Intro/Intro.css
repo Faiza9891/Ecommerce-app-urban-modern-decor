@@ -70,3 +70,11 @@
         top: 500px;
     }
 }
+@media screen and (max-width:450px){
+    .app__video-overlay_circle{
+        /* height: 20px;
+        width: 20px; */
+        left: 140px;
+        top: 40%;
+    }
+}

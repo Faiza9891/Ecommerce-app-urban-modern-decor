@@ -1,15 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {useNavigate,Link} from "react-router-dom"
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import {AiFillCloseCircle} from 'react-icons/ai';
-// import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = ({ setCard, card,togglecards,openHome,toggleWallpaper,home,wallpaper}) => {
   // <img src='https://i.pinimg.com/564x/7a/8d/e0/7a8de0d332a01869c56e403f6463bf71.jpg' alt="app logo"/>
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [active, setActive] = useState("active");
   const navigateCarpet = useNavigate();
   const navigateHome = useNavigate();
   const navigatewallpaper = useNavigate();
@@ -72,7 +69,7 @@ const Navbar = ({ setCard, card,togglecards,openHome,toggleWallpaper,home,wallpa
   </div>
      
       <div className="app__navbar-smallscreen" ref={smallscreennavRef}>
-      <div className='burger' style={{position:"absolute",left:"95%"}}> <GiHamburgerMenu color="#fff" fontSize={30} onClick={() => setToggleMenu(true)} /></div>
+      <div className='burger'> <GiHamburgerMenu className='humburger' color="#fff" fontSize={30} onClick={() => setToggleMenu(true)} style={{position:"sticky"}} /></div>
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <AiFillCloseCircle fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
