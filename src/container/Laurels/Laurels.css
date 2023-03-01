@@ -93,4 +93,9 @@
         display: flex;
         justify-content: center;
     }
+    .about_content{
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        display: block;
+    }
 }

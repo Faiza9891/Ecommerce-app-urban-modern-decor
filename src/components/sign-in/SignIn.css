@@ -15,7 +15,7 @@ overflow-x: hidden;
   left: 35%;
   top: 18%;
   transition: 300ms;
-  border: 5px solid black;
+  border: 2px solid black;
   border-radius: 50px;
 }
 .signin_card:hover{
@@ -23,8 +23,8 @@ overflow-x: hidden;
   margin-bottom: 2rem;
   bottom: 30%;
   background-color: rgb(124, 123, 123);
-  box-shadow: 5px 10px 5px 10px rgb(44, 43, 43);
-  border: 5px solid rgb(245, 242, 242);
+  /* box-shadow: 5px 10px 5px 10px rgb(44, 43, 43); */
+  /* border: 5px solid rgb(245, 242, 242); */
 
 }
 .inputs{
@@ -107,7 +107,7 @@ border-bottom: 2px solid black;
 color: black;
 }
 .register_btn:hover{
-  color: #312e2e;
+  color: #4b4949;
 }
 @media  screen and (max-width:1750px) {
   .signin_card{
@@ -167,18 +167,25 @@ color: black;
 }
 @media  screen and (max-width:450px) {
   .signin_card{
-    width: 280px;
-    height: 500px;
-    left: 1%;
+    width: 250px;
+    height: 400px;
+    left: 5%;
   }
   .inputs{
     top: 0%;
   }
   .login_btn{
     margin-left: 4rem;
-    margin-top: -3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 60px;
+    font-size: 15px;
   }
   .register_btn{
-    margin: 1rem;
+    margin: 0.2rem;
+    font-size: 12px;
   }
 }

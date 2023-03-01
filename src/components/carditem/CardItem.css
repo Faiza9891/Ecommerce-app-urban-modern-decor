@@ -37,7 +37,7 @@
     font-size: 30px;
 }
 .slider_content:hover{
-    color: #110f0f;
+    color: #d8d8d8;
 }
 .carpet_sec{
     margin-right: 11rem;
@@ -151,9 +151,30 @@
 @media screen and (max-width: 650px){
     .card_item{
         display: block;
-        width: 40vh;
+        width: 50vw;
+        height: 50vh;
         margin-top: 10%;
-        margin-left: 0%;
+        margin-left: 10%;
+        overflow: hidden;
+    }
+    .card_item h1{
+        font-size: 15px;
+    }
+    .card_item h3{
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .card_item h4{
+        font-size: 12px;
+        margin-top: -2rem;
+    }
+    .offer{
+        font-size: 10px;
+        margin-top: -1rem;
+    }.cart_btn{
+        font-size: 10px;
+        height: 100%;
+        padding: 5px;
     }
     .slider_content{
         /* display: none; */
@@ -188,7 +209,35 @@
         margin-top: 70%;
     }
     .card_item{
-        margin-left: -2rem;
+        margin-left: 2rem;
+        /* width: 50%; */
+        width: 50vw;
+        height: 50vh;
+    }
+   .card_item img{
+    height: 20vh;
+   }
+    .card_item:hover{
+        box-shadow: 2px 4px #4e4c4c;
+        transform: scale(1.05);
+       
+    }
+    .card_item h1{
+        font-size: 15px;
+    }
+    .card_item h3{
+        font-size: 12px;
+    }
+    .card_item h4{
+        font-size: 10px;
+        margin-top: 1rem;
+    }
+    .offer{
+        font-size: 10px;
+    }.cart_btn{
+        font-size: 10px;
+        height: 100%;
+        padding: 3px;
     }
     .carpet_img{
     margin-right: 3rem;

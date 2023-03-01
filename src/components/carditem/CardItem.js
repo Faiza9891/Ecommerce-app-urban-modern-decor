@@ -238,8 +238,8 @@ settings.slidesToShow = 2
       <img src={e.imgUrl} alt="img"/>
       <h1 style={{margin:"1rem",color:"white",fontFamily:"cursive"}}> PRICE - ₹{e.price}</h1>
       <div className='card_content'>
-      <h3 style={{margin:"1rem",color:"black"}}> {e.description}</h3>
-      <h4 style={{color:"black",marginTop:"2rem"}} >{e.stock}</h4>
+      <h3 style={{color:"black"}}> {e.description}</h3>
+      <h4 style={{color:"black"}} >{e.stock}</h4>
       <div className='offer'  style={{color:"black"}}>{e.offer}</div>
       <div>
    <button className='cart_btn' onClick={notify}>ADD TO CART</button>

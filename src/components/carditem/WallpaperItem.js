@@ -299,8 +299,8 @@ pauseOnHover
                   <img src={e.imgUrl} alt="img"/>
                   <h1 style={{margin:"1rem",color:"white"}}> PRICE - ₹{e.price}</h1>
                   <div className='card_content'>
-                  <h3 style={{margin:"1rem",color:"black"}}> {e.description}</h3>
-                  <h4 style={{color:"white",marginTop:"2rem"}} >{e.stock}</h4>
+                  <h3 style={{color:"black"}}> {e.description}</h3>
+                  <h4 style={{color:"white"}} >{e.stock}</h4>
                   <div className='offer'  style={{color:"black"}}>{e.offer}</div>
                   <div>
                   <button className='cart_btn' onClick={notifyme}>ADD TO CART</button>
